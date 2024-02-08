@@ -5,15 +5,22 @@ function App() {
   return (
     <div className="App">
 
+      <TodoCounter />
+      <TodoSearch />
 
-      <header className="App-header">
-      <TodoItem/>
-      <TodoItem/>
-      <TodoItem/>
-      </header>
+      <TodoList>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </TodoList>
+
+
+      <CreateTodoButton />
     </div>
   );
 }
+
+
 
 function TodoItem() {
   return (
